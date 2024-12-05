@@ -56,7 +56,7 @@ public class MousePackets{
     }
 
     public static void queueClickPacket() {
-        queueClickPacket(0, 0);
+        queueClickPacket(-1, -1);
     }
 
     private static boolean checkIdleLogout() {

@@ -47,8 +47,6 @@ task FatJar(type: Jar) {
     baseName = 'EthanVannPlugins'
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
-    exclude("com/example/hidden")
-    exclude("com/example/PathingTesting")
     with jar
 }
 
